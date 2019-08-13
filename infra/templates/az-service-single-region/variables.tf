@@ -25,15 +25,7 @@ variable "deployment_targets" {
     app_name                 = string
     image_name               = string
     image_release_tag_prefix = string
-    auth_client_id           = string
   }))
-}
-
-# Authentication
-variable "external_tenant_id" {
-  description = "For development use when application authentication issuer resides in secondary tenant."
-  type        = string
-  default     = ""
 }
 
 variable "azure_container_resource_group" {
