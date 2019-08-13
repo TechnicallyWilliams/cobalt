@@ -7,7 +7,7 @@ output "azuread_config_data" {
   value = {
     for azuread in data.azuread_application.auth :
     azuread.name => {
-      client_id      = azuread.application_id
+      client_id = azuread.application_id
     }
   }
 }

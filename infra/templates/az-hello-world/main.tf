@@ -22,7 +22,7 @@ module "app_service" {
   app_service_config = {
     for target in var.deployment_targets :
     target.app_name => {
-      image        = "${target.image_name}:${target.image_release_tag_prefix}"
+      image = "${target.image_name}:${target.image_release_tag_prefix}"
     }
   }
 }

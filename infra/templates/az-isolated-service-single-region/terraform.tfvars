@@ -7,23 +7,23 @@
 # the `name` variable.
 
 authn_deployment_targets = [
-{
-    app_name = "cobalt-frontend-api-1",
-    repository = "",
-    dockerfile = "",
-    image_name = "appsvcsample/echo-server-1",
+  {
+    app_name                 = "cobalt-frontend-api-1",
+    repository               = "",
+    dockerfile               = "",
+    image_name               = "appsvcsample/echo-server-1",
     image_release_tag_prefix = "release"
-}
+  }
 ]
 
 unauthn_deployment_targets = [
-{
-    app_name = "cobalt-backend-api-1",
-    repository = "",
-    dockerfile = "",
-    image_name = "appsvcsample/echo-server-1",
+  {
+    app_name                 = "cobalt-backend-api-1",
+    repository               = "",
+    dockerfile               = "",
+    image_name               = "appsvcsample/echo-server-1",
     image_release_tag_prefix = "release"
-}
+  }
 ]
 
 # Note: this is configured as such only to test IP Whitelists. This is a well
